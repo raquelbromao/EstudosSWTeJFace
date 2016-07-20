@@ -22,7 +22,7 @@ public class DateTimeExample {
         GridLayout gridLayout = new GridLayout();
         gridLayout.numColumns = 1;
         parent.setLayout(gridLayout);
-        DateTime calendar = new DateTime(parent, SWT.CALENDAR);
+        DateTime calenda = new DateTime(parent, SWT.CALENDAR);
         DateTime date = new DateTime(parent, SWT.DATE);
         DateTime time = new DateTime(parent, SWT.TIME);
         // Date Selection as a drop-down
