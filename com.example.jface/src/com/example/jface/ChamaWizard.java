@@ -18,10 +18,13 @@ public class ChamaWizard {
 
 		// the layout manager handle the layout
 		// of the widgets in the container
-		shell.setLayout(new FillLayout(SWT.VERTICAL));
+		shell.setLayout(new FillLayout(SWT.HORIZONTAL));
 
 		Button button = new Button(shell, SWT.PUSH);
 		button.setText("Open Wizard");
+		
+		shell.open();
+		
 		button.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
@@ -34,7 +37,6 @@ public class ChamaWizard {
 			}
 		});
 
-		shell.open();
 		while (!shell.isDisposed()) {
 			if (!display.readAndDispatch())
 				display.sleep();
