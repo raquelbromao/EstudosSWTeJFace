@@ -21,7 +21,9 @@ public class TabExample {
 
         Control[] controls = new Control[] { b2, b1, b3 };
         shell.setTabList(controls);
+        
         shell.pack();
+        
         shell.open();
         while (!shell.isDisposed()) {
             if (!display.readAndDispatch()) {
