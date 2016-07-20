@@ -4,6 +4,7 @@ import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.layout.FillLayout;
+import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Label;
@@ -19,7 +20,7 @@ public class FirstSWTApplication {
 
 		// the layout manager handle the layout
 		// of the widgets in the container
-		shell.setLayout(new FillLayout());
+		shell.setLayout(new FillLayout(SWT.HORIZONTAL));
 
 		// TODO add some widgets to the Shell
 		// Shell can be used as container
@@ -46,7 +47,7 @@ public class FirstSWTApplication {
 				System.out.println("Called!");
 			}
 		});
-
+		
 		shell.open();
 		while (!shell.isDisposed()) {
 			if (!display.readAndDispatch())
