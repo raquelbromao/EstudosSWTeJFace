@@ -31,10 +31,8 @@ public class Photo {
 		imageList.add(Display.getDefault().getSystemImage(SWT.ICON_WARNING));
 		imageList.add(Display.getDefault().getSystemImage(SWT.ICON_WORKING));
 		imageList.add(Display.getDefault().getSystemImage(SWT.ICON_QUESTION));
-		imageList
-				.add(Display.getDefault().getSystemImage(SWT.ICON_INFORMATION));
-		imageList.
-				add(Display.getDefault().getSystemImage(SWT.ICON_ERROR));
+		imageList.add(Display.getDefault().getSystemImage(SWT.ICON_INFORMATION));
+		imageList.add(Display.getDefault().getSystemImage(SWT.ICON_ERROR));
 
 		for (Image image : imageList) {
 			Label label = new Label(parent, SWT.NONE);
