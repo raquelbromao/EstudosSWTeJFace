@@ -15,8 +15,8 @@ public class CTabFolderExample {
         Shell shell = new Shell(display);
         shell.setLayout(new GridLayout());
 
-        // SWT.BOTTOM to show at the bottom
-        CTabFolder folder = new CTabFolder(shell, SWT.BOTTOM);
+        // SWT.BOTTOM stylebit on the folder widget, makes the tab appear at the bottom. 
+        CTabFolder folder = new CTabFolder(shell, SWT.BOTTOM); 
         GridData data = new GridData(SWT.FILL,SWT.FILL, true, true,2, 1);
 
         folder.setLayoutData(data);
